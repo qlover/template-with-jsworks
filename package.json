@@ -1,0 +1,47 @@
+{
+  "name": "template-with-jsworks",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.tsx ./src",
+    "lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src",
+    "init:work": "node ./scripts/_work.js",
+    "commit": "node ./scripts/commit.js",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.0",
+    "@commitlint/config-conventional": "^17.4.0",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@types/node": "18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.27.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.2",
+    "release-it": "^15.6.0",
+    "typescript": "4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qlover/template-with-jsworks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qlover/template-with-jsworks/issues"
+  },
+  "homepage": "https://github.com/qlover/template-with-jsworks#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
