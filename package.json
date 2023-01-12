@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "eslint --ext .js,.ts,.tsx ./src",
     "lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src",
-    "init:work": "node ./scripts/_work.js",
-    "commit": "node ./scripts/commit.js",
+    "init:work": "node ./scripts/bin/_work.js",
+    "commit": "node ./scripts/bin/commit.js",
     "release": "release-it"
   },
   "devDependencies": {
